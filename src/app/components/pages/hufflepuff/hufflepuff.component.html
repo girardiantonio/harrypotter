@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="content">
+        <div *ngFor="let character of HarrypotterData" class="card" style="width: 18rem">
+            <img class="card-img-top" [src]="character.image" alt="Character Image">
+            <div class="card-body">
+                <h3 class="card-title"><strong>{{ character.name }}</strong></h3>
+                <p class="card-text"><strong>Species:</strong> {{ character.species }}</p>
+                <p class="card-text"><strong>Gender:</strong> {{ character.gender }}</p>
+                <p class="card-text"><strong>House:</strong> {{ character.house }}</p>
+                <p class="card-text"><strong>Date of Birth:</strong> {{ character.dateOfBirth }}</p>
+                <p class="card-text"><strong>Year of Birth:</strong> {{ character.yearOfBirth }}</p>
+                <p class="card-text"><strong>Is Wizard:</strong> {{ character.wizard }}</p>
+                <p class="card-text"><strong>Ancestry:</strong> {{ character.ancestry }}</p>
+                <p class="card-text"><strong>Eye Colour:</strong> {{ character.eyeColour }}</p>
+                <p class="card-text"><strong>Wand Wood:</strong> {{ character.wand.wood }}</p>
+                <p class="card-text"><strong>Wand Core:</strong> {{ character.wand.core }}</p>
+                <p class="card-text"><strong>Wand Length:</strong> {{ character.wand.length }} inches</p>
+                <p class="card-text"><strong>Patronus:</strong> {{ character.patronus }}</p>
+                <p class="card-text"><strong>Hogwarts Student:</strong> {{ character.hogwartsStudent }}</p>
+                <p class="card-text"><strong>Hogwarts Staff:</strong> {{ character.hogwartsStaff }}</p>
+                <p class="card-text"><strong>Actor:</strong> {{ character.actor }}</p>
+                <p class="card-text"><strong>Alternate Actors:</strong> {{ character.alternate_actors.join(', ') }}</p>
+                <p class="card-text"><strong>Alive:</strong> {{ character.alive }}</p>
+                <p class="card-text"><strong>Id:</strong> {{ character.id }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+  

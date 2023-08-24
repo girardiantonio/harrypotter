@@ -1,0 +1,25 @@
+<header class="head">
+  <div>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Harry_Potter_wordmark.svg"
+      width="300px"
+      alt=""
+    />
+  </div>
+  <div>
+    <img class="logo" src="/assets/hogwarts.png" alt="Logo Image" />
+  </div>
+  <div class="d-flex align-items-center">
+    <div>
+      <a class="btn btn-dark m-2" [routerLink]="'/allhouse'">All House</a>
+    </div>
+    <div class="d-flex flex-column">
+      <a class="btn btn-danger m-2" [routerLink]="'/gryffindor'">Gryffindor</a>
+      <a class="btn btn-warning m-2" [routerLink]="'/hufflepuff'">Hufflepuff</a>
+    </div>
+    <div class="d-flex flex-column">
+      <a class="btn btn-primary m-2" [routerLink]="'/ravenclaw'">Ravenclaw</a>
+      <a class="btn btn-success m-2" [routerLink]="'/slytherin'">Slytherin</a>
+    </div>
+  </div>
+</header>
